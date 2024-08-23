@@ -1,0 +1,186 @@
+
+#load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    mask-image: url('download\ \(1\).svg');
+    aspect-ratio: 1 / 1;
+    mask-size: 100%;
+    background-color:white;
+    mask-position: center;
+    width: 2.5rem;
+    mask-repeat: no-repeat;
+} 
+.hidden{
+    display: none;
+}
+#loading{
+   margin: 12rem auto;
+   height: 50px;
+   width: 50px;
+   background-color: rgb(16, 16, 16);
+}
+body{
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+}
+#header{
+position: fixed; /* Fix position relative to viewport */
+top: 0; /* Distance from the top of the viewport */
+left: 0; /* Distance from the left of the viewport */
+right: 0; 
+z-index: 1000;
+
+display: flex;
+justify-content: center;
+align-items: center;
+    height: 20vh;
+    width:100vw ;
+    gap:.25rem;
+    background-color: rgb(245, 197, 24);
+}
+#search{
+    height: 19%;
+    width: 30%;
+    min-width: 225px;
+    border-radius: 4px;
+    font-size: 1.49rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#btn{
+      padding: 8px 16px; /* Padding inside the button */
+      font-size: 1rem; /* Base font size */
+      border: none; /* Remove default border */
+      border-radius: 4px; /* Rounded corners */
+      background-color:black; /* Button background color */
+      color: #fff; /* Text color */
+      text-transform: uppercase; /* Uppercase text */
+      cursor: pointer; /* Pointer cursor on hover */
+}
+#movies-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4%;
+    margin-top:11rem;
+    justify-content: center;
+    align-items: center;
+}
+/* General styles for the container */
+.individualMovieDiv {
+    display: flex; /* Use Flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    margin: 20px; /* Space around the container */
+    border: 1px solid #ddd; /* Border around the container */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide overflowed content */
+     background-color: #221f1f;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    max-width:300px ;
+    max-height:520px ;
+  }
+  
+  .individualMovieDiv:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+  }
+  
+  /* Styles for the image container */
+  .img-div {
+    width: 100%; /* Full width of the parent container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 440px;
+    overflow: hidden; /* Hide overflowed parts of the image */
+  }
+  
+  .img-div img {
+    width: 300px; /* Make image take full width of the container */
+    height:440px; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container */
+  }
+  
+  /* Styles for the title and rating */
+  h2 {
+    margin: 5px 0; /* Space around headings */
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  h3{
+    margin: 10px 0; /* Space around headings */
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .individualMovieDiv {
+      margin: 10px; /* Reduce margin for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .individualMovieDiv {
+      margin: 5px; /* Further reduce margin for mobile screens */
+    }
+  
+    h2 {
+      font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+  
+    h3 {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+  }
+  .main-container{
+    margin: 3rem;
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first-child{
+   
+    height: 100%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first-child img{
+    height: 70%;
+    width: 80%;
+}
+.movie-details-div{
+    height: 100%;
+    width: 65%;
+    
+    padding-right: 100px;
+    
+}
+#movieDetails{
+    display: flex;
+}
+.movie-details-div p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.movie-details-div .actors{
+    margin-top: 10px;
+}
+.movie-details-div .language{
+    margin-top: 10px;
+}
+.movie-details-div h1,h2,h3,p{
+    margin: 5px 0; /* Space around headings */
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#movies-container p{
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+
+}
